@@ -136,7 +136,7 @@ for (let i = 0; i < button_open_feedback.length; i++) {
             feedback.style.display = 'flex'
             call.style.display = 'none'
             page_blur.style.display = 'block'
-    }
+        }
     );
 }
 
@@ -163,7 +163,7 @@ for (let i = 0; i < button_call_open.length; i++) {
             call.style.display = 'flex'
             feedback.style.display = 'none'
             page_blur.style.display = 'block'
-    }
+        }
     );
 }
 
@@ -177,6 +177,16 @@ button_call_close.addEventListener('click', function () {
     }
 })
 
+//блюр
+
+page_blur.addEventListener('click', function () {
+    if (window.innerWidth < 768) {
+        page_blur.style.display = 'none'
+        menu.style.display = 'none'
+        call.style.display = 'none'
+        feedback.style.display = 'none'
+    }
+})
 
 //слайдер
 
