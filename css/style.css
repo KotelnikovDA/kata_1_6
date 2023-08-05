@@ -69,10 +69,6 @@ button {
     display: none;
 }
 
-.community {
-    display: none;
-}
-
 .name-button {
     display: none;
 }
@@ -891,11 +887,15 @@ div[class*='sony'] .brend__logo {
 }
 
 .community {
-    display: none;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
     margin-left: 24px;
+}
+
+.header-page .community {
+    display: none;
 }
 
 .footer-menu__mail {
@@ -981,10 +981,10 @@ div[class*='sony'] .brend__logo {
     flex-direction: column;
     gap: 16px;
 
-    height: 320px;
+    max-height: 320px;
 }
 
-.connection__input input, 
+.connection__input input,
 .connection__input textarea {
     height: 48px;
 
@@ -1052,11 +1052,19 @@ div[class*='sony'] .brend__logo {
         margin-right: 24px;
     }
 
+    .header-page__left .separator {
+        display: block;
+    }
+
     .community {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         gap: 16px;
+    }
+
+    .header-page .community {
+        display: flex;
     }
 
     .header-page__right .name-button {
@@ -1119,6 +1127,10 @@ div[class*='sony'] .brend__logo {
         width: 222px;
 
         margin: 0;
+    }
+
+    .brends__list {
+        width: 1000px;
     }
 
     .brends__list .swiper-slide:nth-child(n + 7) {
@@ -1291,11 +1303,11 @@ div[class*='sony'] .brend__logo {
         margin-left: 0;
         margin-top: 24px;
     }
-    
+
     .connection .title-page__text {
         margin-left: 16px;
     }
-    
+
     .connection__button-close {
         position: absolute;
 
@@ -1627,11 +1639,11 @@ div[class*='sony'] .brend__logo {
         margin-left: 0;
         margin-top: 32px;
     }
-    
+
     .connection .title-page__text {
         margin-left: 28px;
     }
-    
+
     .connection__button-close {
         position: absolute;
 
