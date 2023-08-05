@@ -1,0 +1,18 @@
+.repair {
+    &__li {
+        .button-go {
+            align-self: flex-end;
+        }
+    }
+
+    &__text {
+        p {
+            color: $color_1;
+            font-family: $font-family_3;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        }
+    }
+}

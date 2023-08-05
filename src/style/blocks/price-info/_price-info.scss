@@ -1,0 +1,49 @@
+.price-info {
+    margin: 16px;
+
+    @media (min-width: 768px) {
+        margin: 24px;
+    }
+
+    @media (min-width: 1440px) {
+        margin: 32px;
+    }
+
+    &__text {
+        padding-bottom: 16px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            max-width: 470px;
+        }
+        
+        p {
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    &__offer {
+        width: 60%;
+        min-width: 200px;
+    }
+}
+
+.offer-link {
+	color: $color_1;
+	font-family: $font-family_3;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 24px;
+	font-weight: 700;
+	letter-spacing: -0.2px;
+	height: 55px;
+	span {
+		display: inline-block;
+		background: url('../../../img/more-pink.svg') center no-repeat;
+		height: 12px;
+		width: 24px;
+	}
+}

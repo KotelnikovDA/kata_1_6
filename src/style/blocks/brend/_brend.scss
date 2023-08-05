@@ -1,0 +1,55 @@
+.brend {
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+        background: no-repeat;
+        background-position-y: center;
+    };
+
+    div[class*='lenovo'] &__logo {
+        background-image: url('../../../img/lenovo.svg');
+
+    };
+
+    div[class*='samsung'] &__logo {
+        background-image: url('../../../img/samsung.svg');
+
+    };
+
+    div[class*='apple'] &__logo {
+        background-image: url('../../../img/apple.svg');
+
+    };
+
+    div[class*='viewsonic'] &__logo {
+        background-image: url('../../../img/viewsonic.svg');
+    }
+
+
+    div[class*='bosch'] &__logo {
+        background-image: url('../../../img/bosch.svg');
+
+    }
+
+    div[class*='hp'] &__logo {
+        background-image: url('../../../img/hp.svg');
+
+    }
+
+    div[class*='acer'] &__logo {
+        background-image: url('../../../img/acer.svg');
+
+    }
+
+    div[class*='sony'] &__logo {
+        background-image: url('../../../img/sony.svg');
+
+    }
+}

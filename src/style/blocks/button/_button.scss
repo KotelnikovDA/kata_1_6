@@ -1,0 +1,198 @@
+.button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: $background-color_2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+    transition-property: transform, box-shadow;
+
+    &:hover {
+        transform: scale(1.2);
+        transition-property: transform, box-shadow;
+        transition: 200ms;
+        background: linear-gradient(#FF4E89, #FF3E79);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+        transform: scale(1.2);
+        transition-property: transform, box-shadow;
+        transition: 200ms;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+
+        .button__icon {
+            height: 20px;
+            transition: 200ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: scale(1.3);
+            transform: scale(1.3);
+            transition: 200ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button__icon-close {
+            transform: scale(1.3) rotate(90deg);
+        }
+    }
+
+    &__icon {
+        height: 20px;
+        width: 20px;
+        transition: 200ms;
+        background: center no-repeat;
+        height: 20px;
+        transition: 200ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        width: 20px;
+        transition: 200ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__icon-repair {
+        background: url('../../../img/repair.svg');
+        width: 20px;
+    }
+
+    &__icon-checkstatus {
+        background-image: url('../../../img/checkstatus.svg');
+        width: 16px;
+    }
+
+    &__icon-phone {
+        background-repeat: no-repeat;
+        background: url('../../../img/phone.svg');
+    }
+
+    &__icon-chat {
+        background-repeat: no-repeat;
+        background: url('../../../img/chat.svg');
+    }
+
+    &__icon-profile {
+        background-repeat: no-repeat;
+        background: url('../../../img/profile.svg');
+    }
+
+    &__icon-search {
+        background-image: url('../../../img/search.svg');
+    }
+
+    &__icon-close {
+        width: 16px;
+        height: 16px;
+
+        span {
+            display: block;
+            width: 21px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: $background-color_3;
+            content: '';
+            transform: rotate(45deg);
+
+            &::after {
+                display: block;
+                width: 21px;
+                height: 2px;
+                border-radius: 1px;
+                background-color: $background-color_3;
+                content: '';
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &--wide {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: $background-color_2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 200ms;
+        transition-property: transform, box-shadow;
+
+        &:hover {
+            transform: scale(1.2);
+            transition-property: transform, box-shadow;
+            transition: 200ms;
+            background: linear-gradient(#FF4E89, #FF3E79);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+.button-go>.button {
+    background-color: $background-color_6;
+    background-image: url('../../../img/button-go.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: transparent;
+}
+
+.header-menu__left .button {
+    @media (min-width: 1440px) {
+        display: none;
+    }
+}
+
+.price__li .button--wide {
+    width: 119px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 32px;
+    text-transform: uppercase;
+    font-family: $font-family_4;
+    color: $color_3;
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    span {
+        background: url('../../../img/button-goside.svg') center no-repeat;
+        height: 12px;
+        width: 12px;
+        margin-left: 12px;
+    }
+}
+
+.connection__button .button--wide {
+    width: 119px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 32px;
+    text-transform: uppercase;
+    font-family: $font-family_4;
+    color: $color_3;
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    span {
+        background: url('../../../img/button-goside.svg') center no-repeat;
+        height: 12px;
+        width: 12px;
+        margin-left: 12px;
+    }
+}

@@ -1,0 +1,48 @@
+.expand {
+    display: none;
+    padding-left: 24px;
+
+    @media (min-width: 768px) {
+        height: 24px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+    }
+
+    @media (min-width: 1440px) {
+        padding-left: 32px;
+    }
+
+    &__button {
+        height: 24px;
+        max-width: content;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 7px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        p {
+            font-family: $font-family_3;
+            font-weight: 700;
+            color: $color_1;
+        }
+    }
+
+    &__img {
+        width: 24px;
+        height: 100%;
+        background: url('../../../img/more.svg') no-repeat center;
+
+        &--down {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
