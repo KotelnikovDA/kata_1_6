@@ -891,7 +891,7 @@ div[class*='sony'] .brend__logo {
 }
 
 .community {
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
